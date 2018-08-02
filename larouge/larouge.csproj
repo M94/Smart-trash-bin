@@ -1,0 +1,457 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6517EF47-2B0B-4656-B46C-59B132819AE0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>larouge</RootNamespace>
+    <AssemblyName>larouge</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\marwa\laroug\vc\1\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>DStore.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>3CE9256F96816C732F80A4B0706AF296543AC048</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>larouge_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutBox1.Designer.cs">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcustomeraddhelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcustomeraddhelp.Designer.cs">
+      <DependentUpon>frmcustomeraddhelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmcustomersadd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcustomersadd.Designer.cs">
+      <DependentUpon>frmcustomersadd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdonners.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdonners.Designer.cs">
+      <DependentUpon>frmdonners.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdonnersbill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmdonnersbill.Designer.cs">
+      <DependentUpon>frmdonnersbill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmdonnershelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmemps.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmemps.Designer.cs">
+      <DependentUpon>frmemps.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmempspos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmempspos.Designer.cs">
+      <DependentUpon>frmempspos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgroups.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgroups.Designer.cs">
+      <DependentUpon>frmgroups.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmgroupshelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmgroupshelp.Designer.cs">
+      <DependentUpon>frmgroupshelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlogin.Designer.cs">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmoneyselproducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmoneyselproducts.Designer.cs">
+      <DependentUpon>frmmoneyselproducts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmoneyselproductsreport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmoneyselproductsreport.Designer.cs">
+      <DependentUpon>frmmoneyselproductsreport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmoffers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmoffers.Designer.cs">
+      <DependentUpon>frmoffers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmoperationtypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmoperationtypes.Designer.cs">
+      <DependentUpon>frmoperationtypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmotherbilltypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmotherbilltypes.Designer.cs">
+      <DependentUpon>frmotherbilltypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmproducthelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmproductsatstore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmproductsatstore.Designer.cs">
+      <DependentUpon>frmproductsatstore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmproductshelp2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmproductshelp2.Designer.cs">
+      <DependentUpon>frmproductshelp2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmreturns.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmreturns.Designer.cs">
+      <DependentUpon>frmreturns.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmselbill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmselbill.Designer.cs">
+      <DependentUpon>frmselbill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmselbillhelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmselbillhelp.Designer.cs">
+      <DependentUpon>frmselbillhelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmstartuphelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmstartuphelp.Designer.cs">
+      <DependentUpon>frmstartuphelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtypes.Designer.cs">
+      <DependentUpon>frmtypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmtypeshelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmtypeshelp.Designer.cs">
+      <DependentUpon>frmtypeshelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmusers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmusers.Designer.cs">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmusershelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmusershelp.Designer.cs">
+      <DependentUpon>frmusershelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcustomeraddhelp.resx">
+      <DependentUpon>frmcustomeraddhelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcustomersadd.resx">
+      <DependentUpon>frmcustomersadd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdonners.resx">
+      <DependentUpon>frmdonners.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdonnersbill.resx">
+      <DependentUpon>frmdonnersbill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmdonnershelp.resx">
+      <DependentUpon>frmdonnershelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmemps.resx">
+      <DependentUpon>frmemps.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmempspos.resx">
+      <DependentUpon>frmempspos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgroups.resx">
+      <DependentUpon>frmgroups.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmgroupshelp.resx">
+      <DependentUpon>frmgroupshelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlogin.resx">
+      <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmoneyselproducts.resx">
+      <DependentUpon>frmmoneyselproducts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmoneyselproductsreport.resx">
+      <DependentUpon>frmmoneyselproductsreport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmoffers.resx">
+      <DependentUpon>frmoffers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmoperationtypes.resx">
+      <DependentUpon>frmoperationtypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmotherbilltypes.resx">
+      <DependentUpon>frmotherbilltypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmproducthelp.resx">
+      <DependentUpon>frmproducthelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmproductsatstore.resx">
+      <DependentUpon>frmproductsatstore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmproductshelp2.resx">
+      <DependentUpon>frmproductshelp2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmreturns.resx">
+      <DependentUpon>frmreturns.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmselbill.resx">
+      <DependentUpon>frmselbill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmselbillhelp.resx">
+      <DependentUpon>frmselbillhelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmstartuphelp.resx">
+      <DependentUpon>frmstartuphelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtypes.resx">
+      <DependentUpon>frmtypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmtypeshelp.resx">
+      <DependentUpon>frmtypeshelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmusers.resx">
+      <DependentUpon>frmusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmusershelp.resx">
+      <DependentUpon>frmusershelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\29067225_426857941085382_5353814156292604106_n.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard_check_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\627249-delete3-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-folder-new-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clipboard_check_edit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DStore.ico" />
+    <Content Include="Mid-Nights-Santa-Santa-stars.ico" />
+    <Content Include="print_queue.ico" />
+    <None Include="Resources\back2.jpg" />
+    <None Include="Resources\Bookmark-delete-icon.png" />
+    <None Include="Resources\offers-icon.png" />
+    <None Include="Resources\Logout-icon.png" />
+    <None Include="Resources\Trash-Delete-icon.png" />
+    <None Include="Resources\29067225_426857941085382_5353814156292604106_n1.bmp" />
+    <None Include="Resources\store-icon %281%29.png" />
+    <None Include="Resources\Money-icon.png" />
+    <None Include="Resources\users-icon %281%29.png" />
+    <None Include="Resources\Group-Folder-icon %281%29.png" />
+    <None Include="Resources\User-Blue-Folder-icon %281%29.png" />
+    <None Include="Resources\Question-type-one-correct-icon.png" />
+    <None Include="Resources\Group-Folder-icon1.png" />
+    <None Include="Resources\User-Blue-Folder-icon2.png" />
+    <None Include="Resources\users-icon1.png" />
+    <None Include="Resources\images %282%291.jpg" />
+    <None Include="Resources\images %281%291.jpg" />
+    <None Include="Resources\unnamed1.png" />
+    <None Include="Resources\Purse-icon1.png" />
+    <None Include="Resources\Purse-icon.png" />
+    <None Include="Resources\shopping-cart-up-icon.png" />
+    <None Include="Resources\Sales-report-icon.png" />
+    <None Include="Resources\cash-register-icon %281%29.png" />
+    <None Include="Resources\cash-register-icon.png" />
+    <None Include="Resources\Ecommerce-Return-Purchase-icon1.png" />
+    <None Include="Resources\Ecommerce-Return-Purchase-icon.png" />
+    <None Include="Resources\Ecommerce-Bill-icon.png" />
+    <None Include="Resources\users-icon.png" />
+    <None Include="Resources\User-Blue-Folder-icon1.png" />
+    <None Include="Resources\l-ic-ne-de-sortie-déconnexion-et-production-débouché-symbole-plat-78854268.jpg" />
+    <None Include="Resources\Group-Folder-icon.png" />
+    <None Include="Resources\User-Blue-Folder-icon.png" />
+    <None Include="Resources\images2.png" />
+    <None Include="Resources\unnamed.png" />
+    <None Include="Resources\images1.png" />
+    <None Include="Resources\images %281%29.png" />
+    <None Include="Resources\new-by-copy.png" />
+    <None Include="Resources\Ecommerce-Cash-Register-icon.png" />
+    <None Include="Resources\key-icon.png" />
+    <None Include="Resources\images %282%29.jpg" />
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

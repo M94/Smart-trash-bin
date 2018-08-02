@@ -1,8 +1,0 @@
-C:\marwa\new hakathon\prog\smarttrash\smarttrash\bin\Debug\smarttrash.exe
-C:\marwa\new hakathon\prog\smarttrash\smarttrash\bin\Debug\smarttrash.pdb
-C:\marwa\new hakathon\prog\smarttrash\smarttrash\obj\x86\Debug\smarttrash.Form1.resources
-C:\marwa\new hakathon\prog\smarttrash\smarttrash\obj\x86\Debug\smarttrash.Properties.Resources.resources
-C:\marwa\new hakathon\prog\smarttrash\smarttrash\obj\x86\Debug\smarttrash.csproj.GenerateResource.Cache
-C:\marwa\new hakathon\prog\smarttrash\smarttrash\obj\x86\Debug\smarttrash.exe
-C:\marwa\new hakathon\prog\smarttrash\smarttrash\obj\x86\Debug\smarttrash.pdb
-C:\marwa\new hakathon\prog\smarttrash\smarttrash\obj\x86\Debug\smarttrash.csprojResolveAssemblyReference.cache
