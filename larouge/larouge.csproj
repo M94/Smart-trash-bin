@@ -82,39 +82,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutBox1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AboutBox1.Designer.cs">
-      <DependentUpon>AboutBox1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmcustomeraddhelp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmcustomeraddhelp.Designer.cs">
-      <DependentUpon>frmcustomeraddhelp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmcustomersadd.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmcustomersadd.Designer.cs">
-      <DependentUpon>frmcustomersadd.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmdonners.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmdonners.Designer.cs">
-      <DependentUpon>frmdonners.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmdonnersbill.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmdonnersbill.Designer.cs">
-      <DependentUpon>frmdonnersbill.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmdonnershelp.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="frmemps.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,17 +100,17 @@
     <Compile Include="frmgroups.Designer.cs">
       <DependentUpon>frmgroups.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmgroupshelp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmgroupshelp.Designer.cs">
-      <DependentUpon>frmgroupshelp.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmlogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmlogin.Designer.cs">
       <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmmain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmmain.Designer.cs">
+      <DependentUpon>frmmain.cs</DependentUpon>
     </Compile>
     <Compile Include="frmmoneyselproducts.cs">
       <SubType>Form</SubType>
@@ -151,68 +118,11 @@
     <Compile Include="frmmoneyselproducts.Designer.cs">
       <DependentUpon>frmmoneyselproducts.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmmoneyselproductsreport.cs">
+    <Compile Include="frmmonotoring.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmmoneyselproductsreport.Designer.cs">
-      <DependentUpon>frmmoneyselproductsreport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmoffers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmoffers.Designer.cs">
-      <DependentUpon>frmoffers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmoperationtypes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmoperationtypes.Designer.cs">
-      <DependentUpon>frmoperationtypes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmotherbilltypes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmotherbilltypes.Designer.cs">
-      <DependentUpon>frmotherbilltypes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmproducthelp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmproductsatstore.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmproductsatstore.Designer.cs">
-      <DependentUpon>frmproductsatstore.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmproductshelp2.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmproductshelp2.Designer.cs">
-      <DependentUpon>frmproductshelp2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmreturns.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmreturns.Designer.cs">
-      <DependentUpon>frmreturns.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmselbill.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmselbill.Designer.cs">
-      <DependentUpon>frmselbill.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmselbillhelp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmselbillhelp.Designer.cs">
-      <DependentUpon>frmselbillhelp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmstartuphelp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmstartuphelp.Designer.cs">
-      <DependentUpon>frmstartuphelp.cs</DependentUpon>
+    <Compile Include="frmmonotoring.Designer.cs">
+      <DependentUpon>frmmonotoring.cs</DependentUpon>
     </Compile>
     <Compile Include="frmtypes.cs">
       <SubType>Form</SubType>
@@ -220,50 +130,14 @@
     <Compile Include="frmtypes.Designer.cs">
       <DependentUpon>frmtypes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmtypeshelp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmtypeshelp.Designer.cs">
-      <DependentUpon>frmtypeshelp.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmusers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmusers.Designer.cs">
       <DependentUpon>frmusers.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmusershelp.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmusershelp.Designer.cs">
-      <DependentUpon>frmusershelp.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MDIParent1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MDIParent1.Designer.cs">
-      <DependentUpon>MDIParent1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="AboutBox1.resx">
-      <DependentUpon>AboutBox1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmcustomeraddhelp.resx">
-      <DependentUpon>frmcustomeraddhelp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmcustomersadd.resx">
-      <DependentUpon>frmcustomersadd.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmdonners.resx">
-      <DependentUpon>frmdonners.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmdonnersbill.resx">
-      <DependentUpon>frmdonnersbill.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmdonnershelp.resx">
-      <DependentUpon>frmdonnershelp.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmemps.resx">
       <DependentUpon>frmemps.cs</DependentUpon>
     </EmbeddedResource>
@@ -273,62 +147,23 @@
     <EmbeddedResource Include="frmgroups.resx">
       <DependentUpon>frmgroups.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmgroupshelp.resx">
-      <DependentUpon>frmgroupshelp.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmmain.resx">
+      <DependentUpon>frmmain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmmoneyselproducts.resx">
       <DependentUpon>frmmoneyselproducts.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmmoneyselproductsreport.resx">
-      <DependentUpon>frmmoneyselproductsreport.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmoffers.resx">
-      <DependentUpon>frmoffers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmoperationtypes.resx">
-      <DependentUpon>frmoperationtypes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmotherbilltypes.resx">
-      <DependentUpon>frmotherbilltypes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmproducthelp.resx">
-      <DependentUpon>frmproducthelp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmproductsatstore.resx">
-      <DependentUpon>frmproductsatstore.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmproductshelp2.resx">
-      <DependentUpon>frmproductshelp2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmreturns.resx">
-      <DependentUpon>frmreturns.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmselbill.resx">
-      <DependentUpon>frmselbill.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmselbillhelp.resx">
-      <DependentUpon>frmselbillhelp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmstartuphelp.resx">
-      <DependentUpon>frmstartuphelp.cs</DependentUpon>
+    <EmbeddedResource Include="frmmonotoring.resx">
+      <DependentUpon>frmmonotoring.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmtypes.resx">
       <DependentUpon>frmtypes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmtypeshelp.resx">
-      <DependentUpon>frmtypeshelp.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmusers.resx">
       <DependentUpon>frmusers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmusershelp.resx">
-      <DependentUpon>frmusershelp.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MDIParent1.resx">
-      <DependentUpon>MDIParent1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -340,7 +175,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="App.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

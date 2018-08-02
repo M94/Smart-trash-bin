@@ -35,16 +35,16 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnlogin = new System.Windows.Forms.Button();
             this.btncancle = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.comp = new System.Windows.Forms.ComboBox();
+            this.COMPCAMP = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // txtusername
             // 
             this.txtusername.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.txtusername.Location = new System.Drawing.Point(160, 11);
+            this.txtusername.Location = new System.Drawing.Point(160, 61);
             this.txtusername.Name = "txtusername";
             this.txtusername.Size = new System.Drawing.Size(196, 36);
             this.txtusername.TabIndex = 1;
@@ -54,7 +54,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.label1.Location = new System.Drawing.Point(362, 19);
+            this.label1.Location = new System.Drawing.Point(362, 69);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(136, 23);
             this.label1.TabIndex = 1;
@@ -63,7 +63,7 @@
             // txtpassword
             // 
             this.txtpassword.Font = new System.Drawing.Font("Tahoma", 18F);
-            this.txtpassword.Location = new System.Drawing.Point(160, 67);
+            this.txtpassword.Location = new System.Drawing.Point(160, 117);
             this.txtpassword.Name = "txtpassword";
             this.txtpassword.Size = new System.Drawing.Size(196, 36);
             this.txtpassword.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.label2.Location = new System.Drawing.Point(398, 75);
+            this.label2.Location = new System.Drawing.Point(398, 125);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 1;
@@ -83,7 +83,7 @@
             // 
             this.btnlogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.btnlogin.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.btnlogin.Location = new System.Drawing.Point(25, 20);
+            this.btnlogin.Location = new System.Drawing.Point(25, 70);
             this.btnlogin.Name = "btnlogin";
             this.btnlogin.Size = new System.Drawing.Size(117, 36);
             this.btnlogin.TabIndex = 3;
@@ -96,7 +96,7 @@
             // 
             this.btncancle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.btncancle.Font = new System.Drawing.Font("Tahoma", 14F);
-            this.btncancle.Location = new System.Drawing.Point(25, 62);
+            this.btncancle.Location = new System.Drawing.Point(25, 112);
             this.btncancle.Name = "btncancle";
             this.btncancle.Size = new System.Drawing.Size(117, 36);
             this.btncancle.TabIndex = 4;
@@ -105,24 +105,32 @@
             this.btncancle.UseVisualStyleBackColor = false;
             this.btncancle.Click += new System.EventHandler(this.btncancle_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::larouge.Properties.Resources._29067225_426857941085382_5353814156292604106_n;
-            this.pictureBox1.Location = new System.Drawing.Point(134, 123);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(222, 67);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Visible = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::larouge.Properties.Resources.key_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(88, 135);
+            this.pictureBox2.Location = new System.Drawing.Point(25, 154);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(40, 45);
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
+            // 
+            // comp
+            // 
+            this.comp.FormattingEnabled = true;
+            this.comp.Location = new System.Drawing.Point(238, 12);
+            this.comp.Name = "comp";
+            this.comp.Size = new System.Drawing.Size(244, 21);
+            this.comp.TabIndex = 6;
+            this.comp.SelectedIndexChanged += new System.EventHandler(this.comp_SelectedIndexChanged);
+            // 
+            // COMPCAMP
+            // 
+            this.COMPCAMP.FormattingEnabled = true;
+            this.COMPCAMP.Location = new System.Drawing.Point(12, 12);
+            this.COMPCAMP.Name = "COMPCAMP";
+            this.COMPCAMP.Size = new System.Drawing.Size(220, 21);
+            this.COMPCAMP.TabIndex = 7;
+            this.COMPCAMP.Visible = false;
             // 
             // frmlogin
             // 
@@ -131,8 +139,9 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(518, 211);
+            this.Controls.Add(this.COMPCAMP);
+            this.Controls.Add(this.comp);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btncancle);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.label2);
@@ -146,7 +155,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "دخول النظام";
             this.Load += new System.EventHandler(this.frmlogin_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -161,8 +169,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnlogin;
         private System.Windows.Forms.Button btncancle;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ComboBox comp;
+        private System.Windows.Forms.ComboBox COMPCAMP;
     }
 }
 

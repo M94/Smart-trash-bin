@@ -27,10 +27,74 @@ namespace larouge
 
         private void frmlogin_Load(object sender, EventArgs e)
         {
-            userlevel = 0;
+
+            fillcmbdata(comp, false, "Tlevels", "levelname", "levelid", "");
+           // setselcombo(comp, appuserid);
  
         }
+        private void setselcombo(ComboBox cmb, string fval)
+        {
+            int Selected = 0;
+            int count = cmb.Items.Count;
+            for (int i = 0; (i <= (count - 1)); i++)
+            {
+                cmb.SelectedIndex = i;
+                if (Convert.ToString(cmb.SelectedValue) == fval)
+                {
+                    Selected = i;
+                }
 
+            }
+
+            cmb.SelectedIndex = Selected;
+        }
+        private void fillcmbdata(ComboBox cmbname, bool addall, string tblname, string dsmember, string idcol, string wherecon)
+        {
+            OleDbConnection con = new OleDbConnection();
+            try
+            {
+                con.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["MyconnectionString"].ConnectionString;
+                cmd = new OleDbCommand();
+
+                cmd.Connection = con;
+
+                con.Open();
+
+                //create command    
+                //OleDbCommand OCMD = null;
+                string strall = "SELECT " + idcol + " ,  " + dsmember + " FROM " + tblname;
+
+                if (wherecon.ToString().Length > 0)
+                {
+                    strall = strall + " where " + wherecon;
+                }
+                cmd.CommandText = strall;
+                //execute command
+                reader = cmd.ExecuteReader();
+
+                //load datareader to datatable       
+                DataTable DT = new DataTable();
+
+                DT.Load(reader);
+                if (addall == true)
+                {
+                    DataRow dr = DT.NewRow();
+                    dr[0] = 0;
+                    dr[1] = "غير محدد";
+                    DT.Rows.InsertAt(dr, 0);
+                }
+                //attach datatable to combobox
+                cmbname.DisplayMember = dsmember;
+                cmbname.ValueMember = idcol;
+                cmbname.DataSource = DT;
+
+                con.Close();
+            }
+            catch (OleDbException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+        }
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -77,7 +141,7 @@ namespace larouge
                     break;
                 case 1:
                  this.Hide();
-                 MDIParent1 fm = new MDIParent1(useridsel,usernamesel);
+                 frmmain fm = new frmmain();
                     fm.Show();                
                     break;
                 case 2:
@@ -109,6 +173,24 @@ namespace larouge
                 }
                 return true;
                
+            }
+        }
+
+        private void comp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comp.SelectedIndex == 1)
+            {
+                fillcmbdata(COMPCAMP, false, "companies", "companyname", "companyid", " companylevel='2'");
+                COMPCAMP.Visible = true;
+            }
+            else if (comp.SelectedIndex == 0)
+            {
+
+                COMPCAMP.Visible = false;
+            }
+            else
+            {
+                fillcmbdata(COMPCAMP, false, "companies", "companyname", "companyid", " companylevel='3'");
             }
         }
 
