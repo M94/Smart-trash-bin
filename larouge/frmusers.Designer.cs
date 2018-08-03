@@ -29,93 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmusers));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.num = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colpass = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cmblevel = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.colisactive = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.btndel = new System.Windows.Forms.Button();
             this.btnclose = new System.Windows.Forms.Button();
-            this.btnsave = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.num,
-            this.Column1,
-            this.Column2,
-            this.colpass,
-            this.cmblevel,
-            this.colisactive});
-            this.dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 12);
-            this.dataGridView1.MultiSelect = false;
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(673, 286);
-            this.dataGridView1.TabIndex = 14;
-            this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-            this.dataGridView1.ColumnHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_ColumnHeaderMouseClick);
-            // 
-            // num
-            // 
-            this.num.HeaderText = "م";
-            this.num.Name = "num";
-            this.num.ReadOnly = true;
-            this.num.Width = 30;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "id";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 30;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "المستخدم";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 250;
-            // 
-            // colpass
-            // 
-            this.colpass.HeaderText = "كلمة المرور";
-            this.colpass.Name = "colpass";
-            // 
-            // cmblevel
-            // 
-            this.cmblevel.HeaderText = "المستوى";
-            this.cmblevel.Name = "cmblevel";
-            this.cmblevel.Width = 150;
-            // 
-            // colisactive
-            // 
-            this.colisactive.HeaderText = "نشط";
-            this.colisactive.Name = "colisactive";
-            this.colisactive.Width = 50;
-            // 
-            // btndel
-            // 
-            this.btndel.BackColor = System.Drawing.Color.LavenderBlush;
-            this.btndel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btndel.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndel.ForeColor = System.Drawing.Color.Red;
-            this.btndel.Image = global::larouge.Properties.Resources.Trash_Delete_icon;
-            this.btndel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btndel.Location = new System.Drawing.Point(146, 313);
-            this.btndel.Name = "btndel";
-            this.btndel.Size = new System.Drawing.Size(116, 56);
-            this.btndel.TabIndex = 13;
-            this.btndel.Text = "حذف";
-            this.btndel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btndel.UseVisualStyleBackColor = false;
-            this.btndel.Click += new System.EventHandler(this.btndel_Click);
             // 
             // btnclose
             // 
@@ -124,7 +48,7 @@
             this.btnclose.ForeColor = System.Drawing.Color.Red;
             this.btnclose.Image = global::larouge.Properties.Resources.l_ic_ne_de_sortie_déconnexion_et_production_débouché_symbole_plat_78854268;
             this.btnclose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnclose.Location = new System.Drawing.Point(569, 313);
+            this.btnclose.Location = new System.Drawing.Point(37, 180);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(116, 56);
             this.btnclose.TabIndex = 12;
@@ -133,30 +57,94 @@
             this.btnclose.UseVisualStyleBackColor = true;
             this.btnclose.Click += new System.EventHandler(this.btnclose_Click);
             // 
-            // btnsave
+            // button1
             // 
-            this.btnsave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.btnsave.Image = global::larouge.Properties.Resources.Save;
-            this.btnsave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnsave.Location = new System.Drawing.Point(12, 313);
-            this.btnsave.Name = "btnsave";
-            this.btnsave.Size = new System.Drawing.Size(116, 56);
-            this.btnsave.TabIndex = 11;
-            this.btnsave.Text = "حفظ";
-            this.btnsave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnsave.UseVisualStyleBackColor = false;
-            this.btnsave.Click += new System.EventHandler(this.btnsave_Click);
+            this.button1.Location = new System.Drawing.Point(37, 21);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(253, 41);
+            this.button1.TabIndex = 13;
+            this.button1.Text = "الباركود";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(41, 87);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(249, 43);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "عدد النقاط";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(318, 21);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(284, 49);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(335, 99);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(18, 19);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(314, 134);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(72, 19);
+            this.label2.TabIndex = 17;
+            this.label2.Text = "حاول أكثر";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label3.Location = new System.Drawing.Point(424, 134);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(108, 19);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "أحسنك استمر";
+            // 
+            // button3
+            // 
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(449, 160);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(83, 67);
+            this.button3.TabIndex = 18;
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(305, 160);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(81, 67);
+            this.button4.TabIndex = 18;
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // frmusers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(697, 381);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.btndel);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ClientSize = new System.Drawing.Size(657, 248);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnclose);
-            this.Controls.Add(this.btnsave);
             this.Font = new System.Drawing.Font("Tahoma", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -167,22 +155,22 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "المستخدمين";
             this.Load += new System.EventHandler(this.frmusers_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button btndel;
         private System.Windows.Forms.Button btnclose;
-        private System.Windows.Forms.Button btnsave;
-        private System.Windows.Forms.DataGridViewTextBoxColumn num;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colpass;
-        private System.Windows.Forms.DataGridViewComboBoxColumn cmblevel;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn colisactive;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }

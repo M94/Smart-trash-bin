@@ -31,8 +31,7 @@ namespace larouge
         {
             
             //loadgridonce = false;
-            fillcmbdata(cmbgroups, true, "Tgroups", "groupname", "IDgroup", "isactive = true");
-            fillcmbdata(cmbtyps, true, "Tproducttypes", "producttype", "producttypeid", "isactive = true");
+           
             
 
         }
@@ -130,6 +129,11 @@ namespace larouge
         private void label1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
 
     }

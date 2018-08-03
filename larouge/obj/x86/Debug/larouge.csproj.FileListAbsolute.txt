@@ -67,12 +67,8 @@ C:\marwa\laroug\vc\hackathon\larouge\bin\Debug\larouge.application
 C:\marwa\laroug\vc\hackathon\larouge\bin\Debug\larouge.exe
 C:\marwa\laroug\vc\hackathon\larouge\bin\Debug\larouge.pdb
 C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.csprojResolveAssemblyReference.cache
-C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.frmemps.resources
-C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.frmempspos.resources
-C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.frmgroups.resources
 C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.frmlogin.resources
 C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.frmmoneyselproducts.resources
-C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.frmtypes.resources
 C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.frmusers.resources
 C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.Properties.Resources.resources
 C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.csproj.GenerateResource.Cache
@@ -80,3 +76,4 @@ C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.exe.manifest
 C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.application
 C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.frmmain.resources
 C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.frmmonotoring.resources
+C:\marwa\laroug\vc\hackathon\larouge\obj\x86\Debug\larouge.MDIParent1.resources

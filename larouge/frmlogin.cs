@@ -141,7 +141,9 @@ namespace larouge
                     break;
                 case 1:
                  this.Hide();
-                 frmmain fm = new frmmain();
+                 //frmmain fm = new frmmain();
+                 MDIParent1 fm = new MDIParent1();
+                    
                     fm.Show();                
                     break;
                 case 2:

@@ -37,7 +37,7 @@ namespace larouge
         {
             fillcmblevel();
 
-            fillgridfromtable(dataGridView1, "Tusers", 4, "");
+            
         }
         private void fillcmblevel()
         {
@@ -70,9 +70,7 @@ namespace larouge
                         // dg.Rows.Add(rownum.ToString(), reader["IDgroup"].ToString(), reader["groupname"].ToString(), reader["isactive"].ToString());
                         //rownum++;
                     }
-                    cmblevel.DataSource = dt;
-                    cmblevel.DisplayMember = dt.Columns[1].ColumnName;
-                    cmblevel.ValueMember = dt.Columns[0].ColumnName;
+   
 
                 }
 
@@ -135,15 +133,8 @@ namespace larouge
 
         private void btndel_Click(object sender, EventArgs e)
         {
-            if (selgrid >= 0)
-            {
-                string id =dataGridView1 .Rows[selgrid].Cells[1].Value.ToString();
-                if (MessageBox.Show("هل تريد حذف هذا المستخدم", "حذف مستخدم", MessageBoxButtons.YesNo) == System.Windows.Forms.DialogResult.Yes)
-                {
-                    deleterecordid("Tusers", " Id ="+ id);
-                }
-                fillgridfromtable(dataGridView1, "Tusers", 4, "");
-            }
+           
+   
         }
         private void deleterecordid(string tblname, string wherestr)
         {
@@ -189,14 +180,7 @@ namespace larouge
 
         private void btnsave_Click(object sender, EventArgs e)
         {
-            if (selgrid>=0)
-            {
-                
-                if (savetablefromgrid(dataGridView1, "Tusers",selgrid)==true)
-                {
-                    fillgridfromtable(dataGridView1, "Tusers", 4, "");
-                }
-            }
+ 
         }
 
         private bool savetablefromgrid(DataGridView dg, string tbname,int rowi)
@@ -329,7 +313,7 @@ namespace larouge
 
         private void dataGridView1_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            renumbergrid(dataGridView1, 0);
+            
         }
 
         private void renumbergrid(DataGridView dg, int colindex)

@@ -82,24 +82,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmemps.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmemps.Designer.cs">
-      <DependentUpon>frmemps.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmempspos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmempspos.Designer.cs">
-      <DependentUpon>frmempspos.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frmgroups.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmgroups.Designer.cs">
-      <DependentUpon>frmgroups.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmlogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -124,29 +106,20 @@
     <Compile Include="frmmonotoring.Designer.cs">
       <DependentUpon>frmmonotoring.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmtypes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmtypes.Designer.cs">
-      <DependentUpon>frmtypes.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmusers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmusers.Designer.cs">
       <DependentUpon>frmusers.cs</DependentUpon>
     </Compile>
+    <Compile Include="MDIParent1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent1.Designer.cs">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmemps.resx">
-      <DependentUpon>frmemps.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmempspos.resx">
-      <DependentUpon>frmempspos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmgroups.resx">
-      <DependentUpon>frmgroups.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,11 +132,11 @@
     <EmbeddedResource Include="frmmonotoring.resx">
       <DependentUpon>frmmonotoring.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmtypes.resx">
-      <DependentUpon>frmtypes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frmusers.resx">
       <DependentUpon>frmusers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent1.resx">
+      <DependentUpon>MDIParent1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
